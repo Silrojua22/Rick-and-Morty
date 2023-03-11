@@ -4,9 +4,9 @@ import styles from '../Nav/Nav.module.css'
 
 export default function Nav (props) {
   return (
-    <div>
+    <div className={styles.container}>
       <SearchBar 
-      onSearch={props.onSearch} 
+      onSearch={(characterID) => props.onSearch(characterID)} 
       />
     </div>
   )

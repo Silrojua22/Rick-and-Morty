@@ -1,3 +1,8 @@
 .container {
-    background-color: aquamarine;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(47, 238, 88);
+    padding: 10px;
+    border-radius: 5px; 
+    box-shadow: 0 0 0.6rem 0.3rem white;
 }

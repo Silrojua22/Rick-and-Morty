@@ -1,28 +1,25 @@
-import Card from './Card';
+import Card from "./Card";
+import styled from "styled-components";
 
-
-
-export default function Cards({characters}) {
-
-   const handleDelete = (id) => {
-      characters(characters.filter((character) => character.id !== id));
-   };
-
-
-   return (
-   <div style={{display: 'flex', flexWrap: 'wrap', gap:'0px'}}>
-      {
-         characters.map((characters) => {
-            return  <Card
-            key= {characters.id}
-            name = {characters.name}
-            species = {characters.species}
-            gender = {characters.gender}
-            image = {characters.image}
-            onClose = {() => handleDelete(characters.id)}
-            />
-            
-         })
-      }
-   </div>);
+const Div = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+`;
+export default function Cards(props) {
+  const { characters } = props;
+  // characters --> [{}], onClose
+  return (
+    <Div>
+      {characters.map(({ id, name, species, gender, image }) => (
+        <Card
+          key={id}
+          name={name}
+          species={species}
+          gender={gender}
+          image={image}
+          onClose={() => props.onClose(id)}
+        />
+      ))}
+    </Div>
+  );
 }

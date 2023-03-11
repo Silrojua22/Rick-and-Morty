@@ -1,31 +1,26 @@
 import './App.css'
 import Cards from './components/Cards.jsx'
 import Nav from './components/Nav/Nav'
-import React,{useState, useEffect} from 'react'
+import React,{useState} from 'react'
 
 function App () {
 
-  useEffect(() => {
-    document.title = "Rick and Mory";
-  
-  }, []);
-
   const [characters, setCharacters] = useState([]);
-
-  function onSearch(character) {
-    fetch(`https://rickandmortyapi.com/api/character/${character}`)
-       .then((response) => response.json())
-       .then((data) => {
-          if (data.name) {
-             setCharacters((oldChars) => [...oldChars, data]);
-          } else {
-             window.alert('No hay personajes con ese ID');
-          }
-       });
- }
+  
+  const onSearch = (id) => {
+    fetch(`https://rickandmortyapi.com/api/character/${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        // data --> {}
+        (data.name ? characters.filter((char) => char.id === data.id).length === 0 : "") ? setCharacters([...characters, data]):
+        alert("Personaje no encontrado")
+      })
+      .catch((error) => console.log(error));
+  };
 
   const onClose = (id) => {
-    setCharacters(characters.filter((characters) => characters.id !== id));
+    const filtered = characters.filter((char)=>char.id !== Number(id))
+    setCharacters(filtered)
   }
 
   return (
