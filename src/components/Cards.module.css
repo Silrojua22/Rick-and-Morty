@@ -40,11 +40,10 @@
  .image {
     width: 60%;
     height: 50%;
-    border: 1px solid #ccc;
+    border: 3px solid #4608f1;
     object-fit: cover;
-    border-radius: 1.5rem;
-    border-color: #333;
-    box-shadow: 0 0 0.6rem 0.5rem black;
+    border-radius: 100%;
+    border-color: black;   
     transition: transform 0.3s ease-in-out;
     transform-origin: center center;
     margin-top: 10px;
@@ -75,7 +74,7 @@
     height: 10%;
     background-color: aqua;
     color: black;
-    border-color: #333;
+    border-color: aqua;
     padding: 5px 10px;
     margin-top: -5px;
     cursor: pointer;
