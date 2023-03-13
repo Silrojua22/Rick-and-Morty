@@ -3,7 +3,7 @@ import Cards from './components/Cards.jsx'
 import Nav from './components/Nav/Nav'
 import React,{useState} from 'react'
 import Detail from './components/Detail/Detail'
-import About from './components/About/About'
+import About from "./components/About/About"
 import { Routes, Route } from 'react-router-dom'
 
 
@@ -33,14 +33,10 @@ function App () {
         onSearch={onSearch}
       />
        <Routes>
-        <Route path='/home' element={<Cards
-           characters={characters}
-           onClose={onClose}
-         />}/>
-         <Route path='/about' element={<About/>}/>
-         <Route path='/detail/:detailId' element={<Detail/>}/>
-
-        </Routes>       
+        <Route path="/" element={<Cards characters={characters} onClose={onClose}/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/detail/:id" element={<Detail characters={characters}/>} /> 
+      </Routes>
          
        
        
