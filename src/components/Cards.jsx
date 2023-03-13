@@ -15,7 +15,7 @@ export default function Cards(props) {
     <Div>
       {characters.map(({ id, name, species, gender, image }) => (
         <Card
-          key={id}
+          id={id}    
           name={name}
           species={species}
           gender={gender}

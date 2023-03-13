@@ -3,17 +3,17 @@
 }
 
 .card {
-    backdrop-filter: blur(3px);
+   background-color: #fcdab7;
     width: 14rem;
     height: 19rem;
     display: inline-block;
     border-right: 0.2em;
-    margin-top: 1%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 1%;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 2%;
     border-radius: 1rem;
-    box-shadow: 0 0 1rem 0.5rem black;
+    box-shadow: 0 0 1rem 0.01rem aqua;
     overflow: hidden;
     flex-direction: column;
     justify-content: space-between;
@@ -44,9 +44,10 @@
     object-fit: cover;
     border-radius: 1.5rem;
     border-color: #333;
-    box-shadow: 0 0 0.6rem 0.3rem white;
+    box-shadow: 0 0 0.6rem 0.5rem black;
     transition: transform 0.3s ease-in-out;
     transform-origin: center center;
+    margin-top: 10px;
     
  }
 
@@ -61,7 +62,9 @@
    font-family: 'Luckiest Guy', cursive;
    font-size: 100%;
    color: black;
-   margin: 10px;
+   margin: 5px;
+ 
+   text-shadow: 1px 1px 0px aqua;
  }
  
 
@@ -70,26 +73,29 @@
     font-size: 70%;
     width: 40%;
     height: 10%;
-    margin: 5%;
-    background-color: fuchsia;
+    background-color: aqua;
     color: black;
     border-color: #333;
     padding: 5px 10px;
-    margin-top: 10px;
+    margin-top: -5px;
     cursor: pointer;
     border-radius: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-color: aqua;
+    background-color: #fcdab7;
     font-weight: bold;
+    box-shadow: 0 0 1rem 0.001rem black;
  }
  
  
 .searchButton {
   color: black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: fuchsia;
+  background-color: aqua;
   margin-left: 10px;
   cursor: pointer;
 }
 
 
+.link-card{
+   text-decoration: none;
+}
