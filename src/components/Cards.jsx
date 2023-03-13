@@ -4,6 +4,9 @@ import styled from "styled-components";
 const Div = styled.div`
   display: flex;
   justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
 `;
 export default function Cards(props) {
   const { characters } = props;

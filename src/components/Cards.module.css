@@ -18,9 +18,10 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
-    
  }
-S
+
+
+
  .images {
     border-right: 0.2em;
     width: 100%;
@@ -37,8 +38,8 @@ S
 
  
  .image {
-    width: 75%;
-    height: 100%;
+    width: 60%;
+    height: 50%;
     border: 1px solid #ccc;
     object-fit: cover;
     border-radius: 1.5rem;
@@ -54,26 +55,16 @@ S
    );
 }
  
- .name {
-   font-family: 'Luckiest Guy', cursive;
-   font-size: 100%;
-   color: black;
-   margin: 10px;
- }
- 
- .species {
-   font-family: 'Luckiest Guy', cursive;
-    font-size: 100%;
-    color: black;
-    margin: 10px;
- }
-
+ .name,
+ .species,
  .gender {
    font-family: 'Luckiest Guy', cursive;
    font-size: 100%;
    color: black;
    margin: 10px;
  }
+ 
+
  
  .button{
     font-size: 70%;
@@ -93,17 +84,12 @@ S
  }
  
  
-.buttonSearch {
+.searchButton {
   color: black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: fuchsia;
   margin-left: 5px;
+  cursor: pointer;
 }
-.Nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: #111;
-  color: #fff;
-  padding: 20px;
-  font-size: 1.3rem;
-}
+
+
