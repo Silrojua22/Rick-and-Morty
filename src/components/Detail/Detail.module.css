@@ -22,3 +22,12 @@
     -webkit-transform: rotate(360deg);
     filter: saturate(180%);
     }
+
+    .backHome {
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: aqua;
+        margin-left: 10px;
+        cursor: pointer;
+        border-color: #FFD700;
+      }
