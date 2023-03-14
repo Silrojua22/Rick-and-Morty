@@ -3,11 +3,11 @@ import { useParams } from "react-router-dom";
 
 export default function Detail(props) {
     console.log(useParams())
-     const {detailId} = useParams()
+     const {id} = useParams()
      const [character, setCharacter] = useState({})
 
      useEffect(() => {
-        fetch(`https://rickandmortyapi.com/api/character/${detailId}`)
+        fetch(`https://rickandmortyapi.com/api/character/${id}`)
         .then((res) => res.json())
         .then((data) => {
           data.name ? setCharacter(data) : window.alert("No hay personajes con ese ID") 
@@ -18,10 +18,15 @@ export default function Detail(props) {
             alert("Ups! Algo estuvo mal")
         })
         return setCharacter({})
-     },[])
+     },[id])
      return(
         <div>
-            <h1></h1>
+            <h1>Name:{character.name}</h1>
+            <h1>Species:{character.species}</h1>
+            <h1>Gender:{character.gender}</h1>
+            <h1>Name:{character.name}</h1>
+            <h1>Name:{character.name}</h1>
+            
 
 
         </div>

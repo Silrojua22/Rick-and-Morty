@@ -39,16 +39,17 @@
   }
   
   .active {
-    -webkit-text-stroke: 2px rgb(10, 10, 212);
+    -webkit-text-stroke: 1px rgb(16, 193, 224);
     color: black;
     text-decoration: none;
-    
+    font-size: 20px;
+    font-weight: bold;
   }
   
   .disabled {
     text-decoration: none;
     color: inherit;
     font-weight: bold;
-    text-decoration: none;
+    font-size: 20px;
   }
   

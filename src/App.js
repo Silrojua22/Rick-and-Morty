@@ -17,7 +17,7 @@ function App () {
       .then((data) => {
         // data --> {}
         (data.name ? characters.filter((char) => char.id === data.id).length === 0 : "") ? setCharacters([...characters, data]):
-        alert("Personaje no encontrado")
+        alert("Personaje ya existe")
       })
       .catch((error) => console.log(error));
   };

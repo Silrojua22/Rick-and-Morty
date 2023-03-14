@@ -7,10 +7,10 @@ export default function Nav(props) {
   return (
     <div className={styles.container}>
       <div className={styles.navLinks}>
-        <NavLink to="/" className={({isActive}) => isActive ? styles.active : null}>
+        <NavLink to="/" className={({isActive}) => isActive ? styles.active : styles.disabled}>
           Home
         </NavLink>
-        <NavLink to="/about" className={({isActive}) => isActive ? styles.active : null}>
+        <NavLink to="/about" className={({isActive}) => isActive ? styles.active : styles.disabled}>
           About
         </NavLink>
       </div>
