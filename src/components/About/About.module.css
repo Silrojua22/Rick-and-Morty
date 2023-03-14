@@ -1,7 +1,7 @@
 .about{
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5), 
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5), 
     2px 2px 3px rgba(0,0,0,0.3);
     color: #fff;
 }
@@ -9,7 +9,7 @@
 .abautParrafo{
   font-weight: bold;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: 1px 1px 2px aqua, 
+  text-shadow: 2px 2px 3px aqua, 
   2px 2px 3px rgba(0,0,0,0.3);
   color: #fff;
   text-decoration: underline;
