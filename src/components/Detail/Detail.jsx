@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
+import styles from "../Detail/Detail.module.css"
 
 export default function Detail(props) {
     console.log(useParams())
@@ -20,15 +21,15 @@ export default function Detail(props) {
         return setCharacter({})
      },[id])
      return(
-        <div>
-            <h1>Name:{character.name}</h1>
-            <h1>Species:{character.species}</h1>
-            <h1>Gender:{character.gender}</h1>
-            <h1>Name:{character.name}</h1>
-            <h1>Name:{character.name}</h1>
-            
-
-
+        <div className={styles.detail}>
+         <div>
+            <h1>Name: {character.name}</h1>
+            <h1>Specie: {character.species}</h1>
+            <h1>Gender: {character.gender}</h1>
+            <h1>Status: {character.status}</h1>
+            <h1>Origin: {character.origin?.name}</h1>   
+         </div>
+            <img className={styles.image} src={character.image} alt="Not found" />
         </div>
     )
 }

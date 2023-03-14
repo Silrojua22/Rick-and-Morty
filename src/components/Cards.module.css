@@ -3,9 +3,9 @@
 }
 
 .card {
-   background-color: #fcdab7;
-    width: 14rem;
-    height: 19rem;
+   background-color: #34495e;
+    width: 12rem;
+    height: 17rem;
     display: inline-block;
     border-right: 0.2em;
     margin-top: 2%;
@@ -19,7 +19,6 @@
     justify-content: space-between;
     padding: 1rem;
  }
-
 
 
  .images {
@@ -47,6 +46,8 @@
     transition: transform 0.3s ease-in-out;
     transform-origin: center center;
     margin-top: 10px;
+    box-shadow: 0 0 1rem 0.10rem aqua;
+
     
  }
 
@@ -73,14 +74,14 @@
     width: 40%;
     height: 10%;
     background-color: aqua;
-    color: black;
+    color: whitesmoke;
     border-color: aqua;
     padding: 5px 10px;
     margin-top: -5px;
     cursor: pointer;
     border-radius: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #fcdab7;
+    background-color: #34495e;
     font-weight: bold;
     box-shadow: 0 0 1rem 0.001rem black;
  }
